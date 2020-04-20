@@ -27,7 +27,7 @@ twitter_username: acezalba
 github_username:  acezalba
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
@@ -50,3 +50,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - minima-readme.md
+  - README.md
+  - assets/main.scss
