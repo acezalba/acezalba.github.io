@@ -151,9 +151,10 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  border: 1px solid $grey-color-dark;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: #323229;
+  color: $grey-color-light;
 }
 
 code {
@@ -161,7 +162,7 @@ code {
 }
 
 pre {
-  padding: 8px 12px;
+  padding: 12px 16px;
   overflow-x: auto;
 
   > code {
