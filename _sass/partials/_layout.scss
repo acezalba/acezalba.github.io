@@ -5,7 +5,7 @@
  */
 .site-header {
   border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid $grey-color-dark;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -22,7 +22,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $grey-color-light;
   }
 }
 
@@ -108,7 +108,7 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 1px solid $grey-color-dark;
   padding: $spacing-unit 0;
 }
 
@@ -193,12 +193,15 @@
 }
 
 .post-list-heading {
-  @include relative-font-size(1.75);
+  @include relative-font-size(2.5);
+  padding: $spacing-unit 0;
+  border-bottom: 1px dotted $grey-color-light;
 }
 
 .post-list {
   margin-left: 0;
   list-style: none;
+  padding: $spacing-unit 0;
 
   > li {
     margin-bottom: $spacing-unit;
@@ -263,4 +266,10 @@
       @include relative-font-size(1.125);
     }
   }
+}
+
+.rss-subscribe {
+  font-size: $small-font-size;
+  text-align: right;
+  padding: $spacing-unit 0;
 }
