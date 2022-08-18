@@ -1,0 +1,53 @@
+
+/*Background based on https://codepen.io/nxworld/pen/OVMzaP */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;700&display=swap');
+
+:root {
+    font-family: 'Inconsolata', monospace;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #dfdfdf;
+}
+
+main {
+    height: 100vh;
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e) 0 0 / 1000% no-repeat;
+    -webkit-animation: gradientAnimation 40s ease infinite;
+    animation: gradientAnimation 40s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10vh 15vw;
+}
+
+@media (min-width: 1280px) {
+    main {
+        padding: 15vh 20vw;
+    }
+}
+
+@-webkit-keyframes gradientAnimation {
+    0%     { background-position: 0% 30%, 0 0;}
+    50%    { background-position: 100% 70%, 0 0;}
+    100% { background-position: 0% 30%, 0 0;}
+}
+@keyframes gradientAnimation {
+    0%     { background-position: 0% 30%, 0 0;}
+    50%    { background-position: 100% 70%, 0 0;}
+    100% { background-position: 0% 30%, 0 0;}
+}
+
+h1 {
+    font-size: 7vh;
+    font-weight: 700;
+}
+
+p {
+    font-size: 4vh;
+    font-weight: 300;
+}
